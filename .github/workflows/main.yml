@@ -50,7 +50,7 @@ jobs:
           #params: # optional, default is 
     # GitHub API Token-change- made changes to runner, added wsl 2,fix docker: Got permission denied , inbound/outbound allowed
           github_token: ${{ github.token }}    
-          params: --bug-tracker=Sarif --checkmarx.version=9.6  --logging.level.com.checkmarx.flow.service=DEBUG
+          params: --bug-tracker=Sarif --checkmarx.version=9.6  --logging.level.com.checkmarx.flow.service=DEBUG --checkmarx.report-timeout=6000000
 
   Sarif:
     runs-on: ubuntu-latest
