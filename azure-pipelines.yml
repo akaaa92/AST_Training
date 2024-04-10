@@ -26,12 +26,4 @@ steps:
     CheckmarxService: 'ast'
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
-    tenantName: 'test_naftali'
-- task: Application security testing@2023
-  inputs:
-    enableProxy: false
-    enableSastScan: true
-    enableDependencyScan: true
-    dependencyServerURL: 'sca'
-    isEnableScaResolver: true
-    pathToScaResolver: 'C:\Akash\setups and plugins\Sca resolver'
+    additionalParams: '--project-groups akash_test'
