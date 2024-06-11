@@ -27,4 +27,4 @@ steps:
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'test_naftali'
-    additionalParams: '--debug,--sast-preset-name,"ASA Premium",--scan-types,sca,sast,iac-security,--sca-last-sast-scan-time=1,--sca-exploitable-path=true,--report-format,pdf,--report-pdf-email,akash.singh@checkmarx.com'
+    additionalParams: '--debug --sast-preset-name "ASA Premium" --scan-types sca,sast,iac-security --sca-last-sast-scan-time=1 --sca-exploitable-path=true --report-format pdf --report-pdf-email akash.singh@checkmarx.com'
