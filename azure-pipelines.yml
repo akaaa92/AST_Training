@@ -26,4 +26,5 @@ steps:
     CheckmarxService: 'ast'
     projectName: '$(Build.Repository.Name)'
     branchName: '$(Build.SourceBranchName)'
-    additionalParams: '--project-groups akash_test'
+    tenantName: 'test_naftali'
+    additionalParams: '--debug,--sast-preset-name,"ASA Premium",--scan-types,sca,sast,iac-security,--sca-last-sast-scan-time=1,--sca-exploitable-path=true,--report-format,pdf,--report-pdf-email,akash.singh@checkmarx.com'
